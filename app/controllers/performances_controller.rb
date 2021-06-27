@@ -1,5 +1,7 @@
 class PerformancesController < ApplicationController
-  before_action :set_performance, only: [:show, :update, :destroy]
+  #must be logged in to visit routes
+  before_action :authorized 
+  before_action :set_performance, only: [:show]
 
   # GET /performances
   def index
@@ -13,30 +15,6 @@ class PerformancesController < ApplicationController
     render json: @performance.to_json(include: [:reviews, :users])
   end
 
-  # POST /performances
-  def create
-    @performance = Performance.new(performance_params)
-
-    if @performance.save
-      render json: @performance, status: :created, location: @performance
-    else
-      render json: @performance.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /performances/1
-  def update
-    if @performance.update(performance_params)
-      render json: @performance
-    else
-      render json: @performance.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /performances/1
-  def destroy
-    @performance.destroy
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
