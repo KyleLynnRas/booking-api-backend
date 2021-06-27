@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  #run authorized inherited from appcontroller before autologin
-  before_action :authorized, only: [:auto_login]
+  #run authorized inherited from appcontroller before autologin/mypage
+  before_action :authorized, only: [:auto_login, :mypage]
 
   # Sign up 
   def create
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     render json: @user
   end
   
-  # GET /mypage 
+  # get /mypage
   def mypage
     @user = User.find_by(username: params[:username])
     #exclude password and other info not needed 
