@@ -4,7 +4,8 @@ class ReviewsController < ApplicationController
 
   # GET /reviews
   def index
-    @reviews = Review.all
+    #order by id number
+    @reviews = Review.all.order(:id)
 
     render json: @reviews.to_json(include: [:user, :performance])
   end
