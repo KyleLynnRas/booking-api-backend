@@ -1,24 +1,26 @@
-# README
+# Booking Site 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Summary 
+Backend API developed with Ruby on Rails. A many to many relationship model is used to relate reviews, performances and users. Full CRUD operations are available on the review model. JWT is utilized to add authorization to the routes.
 
-Things you may want to cover:
 
-* Ruby version
+### Live link:
+https://dashboard.heroku.com/apps/bookin-api-kr
 
-* System dependencies
+## Technologies Used
 
-* Configuration
+- Ruby
+- Ruby on Rails
+- PostgreSQL
+- Bcrypt
+- JSON Web Token
 
-* Database creation
+## References
 
-* Database initialization
+- JWT Backend </br>
+https://tuts.alexmercedcoder.com/2020/ruby-tut/
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Models
 
-* Deployment instructions
-
-* ...
+<img src='https://i.imgur.com/TkhUQi0.png' alt='ERD'>
