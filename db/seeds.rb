@@ -5,18 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create([
-  { username: 'test1', password: "test1" },
-  { username: 'test2', password: "test2" },
-])
 
 Performance.create([
-  { title: "Solo fire performance", summary: "awesome show", img: "https://i.imgur.com/YAPf3Dq.jpg", price: 200  },
-  { title: "Solo fire performance 2", summary: "awesome show", img: "https://i.imgur.com/YAPf3Dq.jpg", price: 200  },
-  { title: "Solo fire performance 3", summary: "awesome show", img: "https://i.imgur.com/YAPf3Dq.jpg", price: 200  },
-  { title: "Solo fire performance 4", summary: "awesome show", img: "https://i.imgur.com/YAPf3Dq.jpg", price: 200  },
-  { title: "Solo fire performance 5", summary: "awesome show", img: "https://i.imgur.com/YAPf3Dq.jpg", price: 200  },
-  { title: "Solo fire performance 6", summary: "awesome show", img: "https://i.imgur.com/YAPf3Dq.jpg", price: 200  },
+  {title: "Solo Fire performance", summary: "Our fire performers always put on a spectacular show. Fire performances are usually done in 4-10 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for the event and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/bfhpg2V.jpg", type: "fire"},
+  { title: "Fire Duet", summary: "Our fire duet performance is always a crowd pleaser. Fire performances are usually done in 4-10 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for the event and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/7U2ojtR.jpg", type: "fire"},
+  { title: "Group fire performance", summary: "Really want to blow everyone away? A large group performance would do the trick. We can include 3-6 performers depending on your event and space. Fire performances are usually done in 4-10 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for the event and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/3tc6Kxa.jpg", type: "fire" },
+  { title: "Fire Breathers", summary: "Fire breathers are always a hit at birthdays and weddings. Fire breathing sets are usually 3-5 minutes. Request a quote today and tell us about your vision for the event and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/tpbJlNE.jpg", type: "fire" },
+  { title: "Pyro Fighters", summary: "Want to put on a real show? Our pyro fighters will battle to the death leaving your guests on the edge of their seats! Pyro fighter sets are usually 4-10 minutes. Request a quote today and tell us about your vision for the event and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/TFzXgwK.jpg", type: "fire" },
+  { title: "Aerial Silks", summary: "Our aerial performers provide mesmerizing entertainment to any event. Aerial silk performances are usually done in 3-7 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for your event, how many guests, and a little about the event space and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/XjFNQrZ.jpg", type: "aerial" },
+  { title: "Aerial Hoop/Lyra", summary: "Our aerial performers provide mesmerizing entertainment to any event. Aerial hoop performances are usually done in 3-7 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for your event, how many guests, and a little about the event space and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/VlV82an.jpg", type: "aerial" },
+  { title: "Aerial Sling", summary: "Our aerial performers provide mesmerizing entertainment to any event. Aerial sling performances are usually done in 3-7 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for your event, how many guests, and a little about the event space and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/9Cjz7Of.jpg", type: "aerial" },
+  { title: "Aerial Sling", summary: "Our aerial duets provide mesmerizing entertainment to any event. Aerial duets are usually done in 3-7 minute sets. Request a quote today and tell us about your vision for your event, how many guests, and a little about the event space and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/YRZnN6a.jpg", type: "aerial" },
+  { title: "Aerial Sling", summary: "Our contortionists provide mesmerizing entertainment to any event. Contortion performances are usually done in 10 minute sets and can be choreographed or improvisational. Request a quote today and tell us about your vision for your event, how many guests, and a little about the event space and we can work together to create a performance that will wow your guests!", img: "https://i.imgur.com/k9ujJD6.jpg", type: "other" },
 ])
 
 puts "Seeded database"
