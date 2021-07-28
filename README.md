@@ -23,4 +23,4 @@ https://tuts.alexmercedcoder.com/2020/ruby-tut/
 
 ## Models
 
-<img src='https://i.imgur.com/TkhUQi0.png' alt='ERD'>
+<img src='https://i.imgur.com/iADCWBl.png' alt='ERD'>
